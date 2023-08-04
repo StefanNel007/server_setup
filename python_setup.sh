@@ -1,2 +1,2 @@
-sudo apt install -y python-is-python3
-sudo apt install -y python3-pip
+sudo apt install -y python3 python3-pip python-is-python3
+sudo pip3 install -y pip
