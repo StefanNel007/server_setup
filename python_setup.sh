@@ -1,2 +1,1 @@
-sudo apt install -y python3 python3-pip python-is-python3
-sudo pip3 install -y pip
+curl -LsSf https://astral.sh/uv/install.sh | sh
