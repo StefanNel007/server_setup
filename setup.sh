@@ -21,7 +21,8 @@ log "Starting server setup…"
 sudo apt-get update -qq
 sudo apt-get install -yqq \
   build-essential curl git gnupg lsb-release ca-certificates \
-  apt-transport-https software-properties-common jq
+  apt-transport-https software-properties-common jq \
+  python-is-python3 pip3
 
 ###############################################################################
 # 2. uv (user-local)
