@@ -44,10 +44,6 @@ if [[ ! -d "${INSTALL_DIR}/bin" ]]; then
   sudo mkdir -p /opt/python
   sudo env "PATH=$PATH" UV_PYTHON_INSTALL_DIR=/opt/python \
        uv python install "${PYTHON_VERSION}"
-
-  # create convenient symlinks (do NOT touch /usr/bin/python3)
-  sudo ln -snf "${INSTALL_DIR}/bin/python3.12" "${INSTALL_DIR}/bin/python3"
-  sudo ln -snf "${INSTALL_DIR}/bin/python3"    "${INSTALL_DIR}/bin/python"
 else
   log "Python ${PYTHON_VERSION} already installed"
 fi
